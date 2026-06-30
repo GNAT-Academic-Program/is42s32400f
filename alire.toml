@@ -1,0 +1,15 @@
+name = "is42s32400f"
+description = "IS42S32400F SDRAM chip driver - generic over FMC bus primitives"
+version = "0.1.0"
+licenses = "Apache-2.0"
+maintainers = ["Olivier Henley <olivier.henley@adacore.com>"]
+
+[build-switches]
+"*".runtime_checks = "none"
+
+[[depends-on]]
+machine_types = "*"
+sdram_generic = "*"
+
+[[pins]]
+sdram_generic = { path = "../sdram_generic" }
