@@ -12,4 +12,5 @@ machine_types = "*"
 sdram_generic = "*"
 
 [[pins]]
-sdram_generic = { path = "../sdram_generic" }
+machine_types = { url = "https://github.com/GNAT-Academic-Program/machine_types.git", branch = "main" }
+sdram_generic = { url = "https://github.com/GNAT-Academic-Program/sdram_generic.git", branch = "main" }
