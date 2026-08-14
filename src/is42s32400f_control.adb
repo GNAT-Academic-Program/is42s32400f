@@ -30,7 +30,7 @@ package body IS42S32400F_Control is
       loop exit when not Driver_Busy; end loop;
       Driver_Send_Cmd (CMD_CLK_Enable);
 
-      delay until Clock + Microseconds (100);
+      delay until Clock + Milliseconds (1);
 
       loop exit when not Driver_Busy; end loop;
       Driver_Send_Cmd (CMD_PALL);

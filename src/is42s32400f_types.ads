@@ -13,7 +13,7 @@ package IS42S32400F_Types is
    TRAS_Ns         : constant := 42;
    TRC_Ns          : constant := 60;
    TXSR_Ns         : constant := 67;
-   Refresh_Count   : constant := 1539;
+   Refresh_Count   : constant := 1542;  --  (15.625μs / 10ns) - 20 = 1542
 
    --  Mode register: burst=1, sequential, CAS=2, single write
    Mode_Register : constant := 16#0220#;
